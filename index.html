@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVICTUS - Disciplina, Mente & Autonomía</title>
+    <style>
+        /* RESET Y VARIABLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        :root {
+            --bg-main: #0d0f12;
+            --bg-card: #161a22;
+            --gold: #d4af37;
+            --gold-hover: #f3ce58;
+            --text-light: #f0f3f6;
+            --text-muted: #9da7b3;
+            --border: #2a313d;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-light);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* ENCABEZADO */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(180deg, rgba(212,175,55,0.08) 0%, rgba(13,15,18,1) 100%);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        header p.subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* MANIFIESTO */
+        .manifesto {
+            background-color: var(--bg-card);
+            border-left: 4px solid var(--gold);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .manifesto h2 {
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .manifesto p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* GRID DE PILARES */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* SECCIÓN DE APOYO Y ALIAS */
+        .support-section {
+            background: linear-gradient(135deg, #161a22 0%, #1f2633 100%);
+            border: 1px solid var(--gold);
+            border-radius: 12px;
+            padding: 35px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .support-section h2 {
+            font-size: 1.6rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .support-section p {
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 20px auto;
+            font-size: 0.95rem;
+        }
+
+        .alias-box {
+            background-color: #0d0f12;
+            border: 1px solid var(--gold);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto 0 auto;
+            max-width: 420px;
+        }
+
+        .alias-label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .alias-code {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1.5px;
+            word-break: break-all;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            padding: 25px 10px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        footer span {
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ENCABEZADO PRINCIPAL -->
+        <header>
+            <h1>PROYECTO INVICTUS</h1>
+            <p class="subtitle">Honor • Disciplina • Autonomía</p>
+        </header>
+
+        <!-- MANIFIESTO -->
+        <section class="manifesto">
+            <h2>El Código Inquebrantable</h2>
+            <p>
+                El valor de una persona no está determinado por las circunstancias del pasado, sino por la determinación inamovible de avanzar cada día. Este espacio está dedicado a la construcción del carácter, la fuerza física y la independencia económica fundada en la lealtad y el esfuerzo propio.
+            </p>
+        </section>
+
+        <!-- SECCIONES DE CONTENIDO EDUCATIVO -->
+        <div class="grid">
+            
+            <article class="card">
+                <span class="card-tag">Pilar I</span>
+                <h3>Disciplina & Fuerza</h3>
+                <p>El cuerpo es el primer territorio de conquista. Rutinas de entrenamiento de autocontrol, calistenia y acondicionamiento físico diseñadas para forjar la resistencia diaria.</p>
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Pilar II</span>
+                <h3>Mente Inquebrantable</h3>
+                <p>Estrategias de enfoque mental, superación del entorno hostil y desarrollo del carácter ante la adversidad. Aprender a dominar la ira para convertirla en energía de construcción.</p>
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Pilar III</span>
+                <h3>Educación & Finanzas</h3>
+                <p>Guías sobre ahorro con propósito, bases de inversión responsable y construcción de activos independientes para alcanzar la soberanía financiera personal.</p>
+            </article>
+
+        </div>
+
+        <!-- SECCIÓN DE VALOR Y APOYO COMUNITARIO -->
+        <section class="support-section">
+            <h2>Apoya la Red de Trabajo Honesto</h2>
+            <p>
+                Todo el conocimiento expuesto en esta plataforma es de acceso libre. Si este contenido aporta valor a tu vida y deseas colaborar de manera voluntaria con el crecimiento de este proyecto independiente, tu apoyo directo impulsa esta causa.
+            </p>
+
+            <div class="alias-box">
+                <div class="alias-label">Alias AstroPay para colaborar:</div>
+                <div class="alias-code">DANZA.DONA.REAVIVABA</div>
+            </div>
+        </section>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <p>© 2026 <span>INVICTUS</span>. Construido con visión, lealtad y determinación.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

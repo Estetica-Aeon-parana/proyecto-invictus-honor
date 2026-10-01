@@ -83,7 +83,69 @@
             font-size: 1rem;
         }
 
-        /* GRID DE PILARES */
+        /* SECCIÓN GUÍA PRINCIPAL (PILAR I) */
+        .guide-section {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 30px 25px;
+            margin-bottom: 30px;
+        }
+
+        .guide-tag {
+            font-size: 0.8rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .guide-section h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .quote-box {
+            background-color: #0d0f12;
+            border-left: 3px solid var(--gold);
+            padding: 15px;
+            margin: 15px 0 25px 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .guide-section h3 {
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin: 20px 0 10px 0;
+        }
+
+        .guide-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .guide-section ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            color: var(--text-light);
+        }
+
+        .guide-section ul li::before {
+            content: "•";
+            color: var(--gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* GRID DE PILARES ADICIONALES */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -96,12 +158,6 @@
             border: 1px solid var(--border);
             border-radius: 10px;
             padding: 20px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--gold);
         }
 
         .card-tag {
@@ -206,25 +262,44 @@
             </p>
         </section>
 
-        <!-- SECCIONES DE CONTENIDO EDUCATIVO -->
+        <!-- GUÍA DESTACADA: PILAR I -->
+        <section class="guide-section">
+            <span class="guide-tag">Pilar I — Guía Práctica</span>
+            <h2>Acondicionamiento Físico & Autocontrol</h2>
+
+            <div class="quote-box">
+                "El cuerpo no se fortalece en el confort, sino en la repetición constante del esfuerzo cuando la mente pide parar."
+            </div>
+
+            <h3>1. Principios de Base</h3>
+            <ul>
+                <li><strong>Movilidad Funcional:</strong> Preparación articular completa (muñecas, hombros, caderas y tobillos) antes de aplicar exigencia física.</li>
+                <li><strong>Tensión Consciente:</strong> Alineación postural constante y respiración ritmada en cada ejecución para proteger la estructura corporal.</li>
+                <li><strong>Constancia Diaria:</strong> La disciplina breve e ininterrumpida de 20 minutos supera cualquier rutina esporádica.</li>
+            </ul>
+
+            <h3>2. Rutina Nivel I (FuerzaCorporal)</h3>
+            <ul>
+                <li><strong>Sentadillas Profundas:</strong> 4 series de 12 a 15 repeticiones. Descenso pausado, espalda firme y empuje desde el talón.</li>
+                <li><strong>Flexiones de Brazo:</strong> 4 series de 8 a 12 repeticiones (adaptable en superficie elevada si se requiere). Mantener bloque abdominal activo.</li>
+                <li><strong>Plancha Abdominal Isométrica:</strong> 4 series de 30 a 45 segundos. Enfoque total en el control del centro de gravedad.</li>
+                <li><strong>Desplazamientos & Coordinación:</strong> 3 rondas de 2 minutos de movilidad continua, mantenimiento de postura baja y agilidad de pies.</li>
+            </ul>
+        </section>
+
+        <!-- PILARES EN DESARROLLO -->
         <div class="grid">
             
             <article class="card">
-                <span class="card-tag">Pilar I</span>
-                <h3>Disciplina & Fuerza</h3>
-                <p>El cuerpo es el primer territorio de conquista. Rutinas de entrenamiento de autocontrol, calistenia y acondicionamiento físico diseñadas para forjar la resistencia diaria.</p>
-            </article>
-
-            <article class="card">
                 <span class="card-tag">Pilar II</span>
                 <h3>Mente Inquebrantable</h3>
-                <p>Estrategias de enfoque mental, superación del entorno hostil y desarrollo del carácter ante la adversidad. Aprender a dominar la ira para convertirla en energía de construcción.</p>
+                <p>Estrategias de enfoque mental, gestión de situaciones difíciles y fortalecimiento del carácter ante la adversidad. Próximamente.</p>
             </article>
 
             <article class="card">
                 <span class="card-tag">Pilar III</span>
                 <h3>Educación & Finanzas</h3>
-                <p>Guías sobre ahorro con propósito, bases de inversión responsable y construcción de activos independientes para alcanzar la soberanía financiera personal.</p>
+                <p>Guías sobre ahorro estratégico, administración de recursos y principios para la soberanía económica personal. Próximamente.</p>
             </article>
 
         </div>
